@@ -1,0 +1,133 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Timpul standard de asteptare pentru a se face o lasagna este de \" + Lasagna.expectedMinutesInOven() + \" minute.\");\n        System.out.println(\"Mai aveti de asteptat inca \" + Lasagna.remainingMinutesInOven() + \" minute.\");\n        System.out.println(\"Numarul de straturi puse pe lasagna: \" + Lasagna.preparationTimeInMinutes(2));\n        System.out.println(\"Lasagna a stat la cuptor: \" + Lasagna.totalTimeInMinutes(3, 20) + \" minute.\");\n        System.out.println(AnnalynsInfiltration.canFastAttack());\n        System.out.println(AnnalynsInfiltration.canSpy());\n        System.out.println(AnnalynsInfiltration.canSignalPrisoner());\n        System.out.println(AnnalynsInfiltration.canFreePrisoner(false,\n                true, false, false));\n        System.out.println(Blackjack.parseCard(\"ace\"));\n        System.out.println(Blackjack.isBlackJack(\"king\", \"ace\"));\n        System.out.println(Blackjack.largeHand(true, 7));\n        System.out.println(Blackjack.smallHand(15, 12));\n        System.out.println(Blackjack.firstTurn(\"two\", \"four\", \"ace\"));\n          BirdWatcher.getLastWeek();\n\n        System.out.println(\"Introduceti un prim numar: \");\n\n        Scanner numere = new Scanner(System.in);\n        int numar1 = numere.nextInt();\n        int b = (int) (Math.random() * 100);\n        if (b > numar1) {\n            System.out.println(\"Numarul random generat \" + b + \" este mai mare decat numarul introdus.\");\n        } else {\n            System.out.println(\"Numarul random generat \" + b + \" este mai mic decat numarul introdus.\");\n        }\n\n        PunctulB.ex2();\n        PunctulB.ex3();\n        PunctulB.ex4();\n        PunctulB.ex5();\n        PunctulB.ex6();\n        PunctulB.ex7();\n        PunctulB.ex8();\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 503a6e0dd07a683063460a60ed585734788378f7)
++++ b/src/Main.java	(date 1659002366860)
+@@ -2,40 +2,38 @@
+ 
+ public class Main {
+     public static void main(String[] args) {
+-        System.out.println("Timpul standard de asteptare pentru a se face o lasagna este de " + Lasagna.expectedMinutesInOven() + " minute.");
+-        System.out.println("Mai aveti de asteptat inca " + Lasagna.remainingMinutesInOven() + " minute.");
+-        System.out.println("Numarul de straturi puse pe lasagna: " + Lasagna.preparationTimeInMinutes(2));
+-        System.out.println("Lasagna a stat la cuptor: " + Lasagna.totalTimeInMinutes(3, 20) + " minute.");
+-        System.out.println(AnnalynsInfiltration.canFastAttack());
+-        System.out.println(AnnalynsInfiltration.canSpy());
+-        System.out.println(AnnalynsInfiltration.canSignalPrisoner());
+-        System.out.println(AnnalynsInfiltration.canFreePrisoner(false,
+-                true, false, false));
+-        System.out.println(Blackjack.parseCard("ace"));
+-        System.out.println(Blackjack.isBlackJack("king", "ace"));
+-        System.out.println(Blackjack.largeHand(true, 7));
+-        System.out.println(Blackjack.smallHand(15, 12));
+-        System.out.println(Blackjack.firstTurn("two", "four", "ace"));
+-          BirdWatcher.getLastWeek();
++
++                System.out.println("Timpul standard de asteptare pentru a se face o lasagna este de " + Lasagna.expectedMinutesInOven() + " minute.");
++                System.out.println("Mai aveti de asteptat inca " + Lasagna.remainingMinutesInOven() + " minute.");
++                System.out.println("Numarul de straturi puse pe lasagna: " + Lasagna.preparationTimeInMinutes(2));
++                System.out.println("Lasagna a stat la cuptor: " + Lasagna.totalTimeInMinutes(3, 20) + " minute.");
++                System.out.println(AnnalynsInfiltration.canFastAttack());
++                System.out.println(AnnalynsInfiltration.canSpy());
++                System.out.println(AnnalynsInfiltration.canSignalPrisoner());
++                System.out.println(AnnalynsInfiltration.canFreePrisoner(false, true, false, false));
++                System.out.println(Blackjack.parseCard("ace"));
++                System.out.println(Blackjack.isBlackJack("king","ace"));
++                System.out.println(Blackjack.largeHand(true, 7));
++                System.out.println(Blackjack.smallHand(15,12));
++                System.out.println(Blackjack.firstTurn("two", "four", "ace"));
++                BirdWatcher.getLastWeek();
+ 
+-        System.out.println("Introduceti un prim numar: ");
++                System.out.println("Introduceti un prim numar: ");
+ 
+-        Scanner numere = new Scanner(System.in);
+-        int numar1 = numere.nextInt();
+-        int b = (int) (Math.random() * 100);
+-        if (b > numar1) {
+-            System.out.println("Numarul random generat " + b + " este mai mare decat numarul introdus.");
+-        } else {
+-            System.out.println("Numarul random generat " + b + " este mai mic decat numarul introdus.");
+-        }
+-
+-        PunctulB.ex2();
+-        PunctulB.ex3();
+-        PunctulB.ex4();
+-        PunctulB.ex5();
+-        PunctulB.ex6();
+-        PunctulB.ex7();
+-        PunctulB.ex8();
+-
+-    }
+-}
++                Scanner numere = new Scanner(System.in);
++                int numar1 = numere.nextInt();
++                int b = (int) (Math.random() * 100);
++                if (b > numar1) {
++                    System.out.println("Numarul random generat " + b + " este mai mare decat numarul introdus.");
++                } else {
++                    System.out.println("Numarul random generat " + b + " este mai mic decat numarul introdus.");
++                }
++                PunctulB.ex2();
++                PunctulB.ex3();
++                PunctulB.ex4();
++                PunctulB.ex5();
++                PunctulB.ex6();
++                PunctulB.ex7();
++                PunctulB.ex8();
++            }
++        }
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 503a6e0dd07a683063460a60ed585734788378f7)
++++ /dev/null	(revision 503a6e0dd07a683063460a60ed585734788378f7)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"VcsDirectoryMappings\">\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 503a6e0dd07a683063460a60ed585734788378f7)
++++ b/.idea/vcs.xml	(date 1659002191373)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/Tema cap.2.iml\" filepath=\"$PROJECT_DIR$/Tema cap.2.iml\" />\n    </modules>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 503a6e0dd07a683063460a60ed585734788378f7)
++++ b/.idea/modules.xml	(date 1659002191300)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/Tema cap.2.iml" filepath="$PROJECT_DIR$/Tema cap.2.iml" />
++      <module fileurl="file://$PROJECT_DIR$/TemaCap2.iml" filepath="$PROJECT_DIR$/TemaCap2.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
